@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Saavedra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+          <div class="nav-toggle">
+            <input type="checkbox" id="menu-toggle" class="nav-toggle__input">
+            <label for="menu-toggle" class="nav-toggle__icon">
+              <img src="./src/icon-nav.svg" alt="">
+            </label>
+            <div class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__item"><a href="#presentation">Home</a></li>
+                <li class="nav-menu__item"><a href="#about">Acerca de Mi</a></li>
+                <li class="nav-menu__item"><a href="#skills">Habilidades</a></li>
+                <li class="nav-menu__item"><a href="#projects">Proyectos</a></li>
+                <li class="nav-menu__item"><a href="#contact">Contáctame</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  <main class="main">
+    <section id="presentation" class="section section-presentation">
+        <p class="section__subtitle">¡Hola! Soy</p>
+        <h2 class="section__title">Diana Saavedra</h2>
+        <p class="section__career">FULL STACK DEVELOPER</p>
+        <img src="./src/img-presentation.svg" alt="" class="section__img-presentation">
+        <img onclick="scrollDown()" class="section__go-down" src="./src/go-down.svg" alt="">
+    </section>
+    <section id="about" class="section section-about">
+      <div class="section__container">
+        <h2 class="section__title">Acerca de Mí</h2>
+        <img class="section__img-about" src="./src/img--about-me.svg" alt="">
+          <div class="section__container-info">
+            <div class="container-info__content">
+              <p class="section__text">Tengo la habilidad de entender y aprender nuevos conceptos constantemente para llevarlos a cabo, eso ha desarrollado en mi la destreza de adaptarme a diferentes entornos o circunstancias con un perfil responsable y resolutivo, ademas de poner en practica los ya aprendidos.</p>
+            </div>
+            <div class="container-info__content">
+              <p class="section__text">Crecí en un ambiente emprendedor y eso me ha permitido generar la capacidad de trabajar en equipo, comunicarme de manera asertiva, gestionar el tiempo y ser autónoma. Estas cualidades me permiten avanzar en mis conocimientos y proyectos dentro del desarrollo web para estar a la vanguardia de la tecnología frente a las necesidades del usuario.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="skills" class="section section-skills">
+      <h2 class="section__title">Habilidades</h2>
+      <p class="section__text">
+        Implemento un diseño adaptable a la interfaz del usuario para conseguir una visualización en la mayor cantidad de dispositivos, con el fin de generar un manejo escalable, funcional y ergonómico por parte del usuario. Procurando las buenas prácticas, el dinamismo y accesibilidad web para una experiencia de usuario enriquecida.
+      </p>
+      <ul class="section__list">
+        <li class="section__item"><img class="item-icon item-icon1" src="./src/icon1.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon2" src="./src/icon2.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon3" src="./src/icon3.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon4" src="./src/icon4.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon5" src="./src/icon5.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon6" src="./src/icon6.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon7" src="./src/icon7.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon8" src="./src/icon8.svg" alt=""></li>
+        <li class="section__item"><img class="item-icon item-icon9" src="./src/icon9.svg" alt=""></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="section__container-elements">
+        <div class="section__container-projects">
+          <img src="./src/ecommerce.jpeg" alt="">
+          <div class="container__container-buttons">
+            <a href="https://github.com/Terbroy/Ecommerce_API.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a href="https://ecommerce-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+          </div>
+        </div>
+        <div class="section__container-projects">
+          <img src="./src/users-crud.png" alt="">
+          <div class="container__container-buttons">
+            <a href="https://github.com/Terbroy/users-crud.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a href="https://crud-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+          </div>
+        </div>
+        <div class="section__container-projects">
+          <img src="./src/pokemon-api.jpeg" alt="">
+          <div class="container__container-buttons">
+            <a href="https://github.com/Terbroy/Pokedex.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a href="https://pokedex-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+          </div>
+        </div>
+        <div class="section__container-projects">
+          <img src="./src/wheather-app.jpeg" alt="">
+          <div class="container__container-buttons">
+            <a href="https://github.com/Terbroy/Weather-app.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a href="https://weatherapp-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+          </div>
+        </div>
+          <div class="section__container-projects">
+            <img src="./src/rick&morty-app.jpeg" alt="">
+            <div class="container__container-buttons">
+                <a href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+                <a href="https://rickandmorty-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section section-contact">
+      <h2 class="section__title">Contact Me</h2>
+      <p class="section__text">
+        Si estas interesado deja tu informacion y te contestare lo mas pronto posible.
+      </p>
+      <form class="section__form" id="contact-form" action="enviar.php" method="POST">
+        <div class="form__element">
+          <input class="element__input" type="text" id="name" name="name" required>
+          <label for="name">Nombre:</label>
+        </div>
+        <div class="form__element">
+          <input class="element__input" type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+        </div>
+        <div class="form__element">
+          <input class="element__input element__input-asunt" type="text" id="subject" name="subject" required>
+          <label for="subject">Asunto:</label>
+        </div>
+        <div class="form__element">
+          <textarea class="element__input element__input-msg" id="message" name="message" required></textarea>
+          <label for="message">Mensaje:</label>
+        </div>
+        <button class="form__submit" type="submit">ENVIAR</button>
+      </form>      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="footer__social-icons">
+        <a href="">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="section__text">Copyright © | Diana Saavedra</p>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
