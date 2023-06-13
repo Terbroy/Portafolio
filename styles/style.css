@@ -249,6 +249,10 @@ body{
     width: 1px;
 }
 
+.section__scroll{
+    display: none;
+}
+
 
 .section__container-info::-webkit-scrollbar-thumb {
     background-color: var(--secundary-color); 
@@ -458,7 +462,7 @@ section.section-projects{
 }
 
 .form__submit{
-    width: 100px;
+    width: auto;
     background-color: var(--secundary-color);
     color: var(--primary-color);
     letter-spacing: 4px;
@@ -484,6 +488,11 @@ section.section-projects{
     height: 2rem;
 }
 
+#button{
+    padding: .5rem;
+    width: auto;
+}
+
 .element__input-msg{
     height: 4rem;
 }
@@ -491,6 +500,18 @@ section.section-projects{
 input:focus ~ label,
 textarea:focus ~ label {
     opacity: 0;
+}
+
+
+.form__element input:focus,
+.form__element textarea:focus {
+  outline: none; 
+  border-bottom: 2px solid var(--secundary-color); /
+}
+
+.form__element input:focus ~ label,
+.form__element textarea:focus ~ label {
+  opacity: 0;
 }
 
 /************* F O O T E R **************/
@@ -522,10 +543,11 @@ textarea:focus ~ label {
 .footer__social-icons a img{
     width: 1.5rem;
     cursor: pointer;
+    filter: invert(100%) grayscale(100%) brightness(10);
 }
 
-.footer__social-icons i:hover{
-    color: var(--secundary-color);
+.footer__social-icons a img:hover{
+    filter: none;
 }
 
 /**************************400*****************************/
@@ -660,6 +682,7 @@ section.section-projects{
     padding: .5rem .7rem;
 }
 
+
 .element__input-msg{
     height: 6rem;
 }
@@ -674,7 +697,7 @@ section.section-projects{
     padding-bottom: 5rem;
 }
 
-.footer__social-icons i{
+.footer__social-icons a img{
     font-size: 2rem;
 }
 
@@ -940,8 +963,8 @@ section.section-projects{
     padding-top: 5rem;
     display: grid;
     grid-template-areas:
-      "a c"
-      "b c";
+    "a c"
+    "b c";
     grid-template-columns: 1fr 65%;
     justify-content: center;
     justify-items: center;
@@ -966,7 +989,9 @@ h2.section__title-about, h2.section__title-about+ h2{
 }
 
 .section__container-info {
+    position: relative;
     grid-area: b;
+    overflow-x: scroll;
 }
 
 .container-info__content {
@@ -978,6 +1003,33 @@ h2.section__title-about, h2.section__title-about+ h2{
     line-height: 1.8rem;
     letter-spacing: 1.5px;
     font-weight: 500;
+}
+
+
+.section__scroll{
+    display: block;
+    position: absolute;
+    bottom: 60%;
+    cursor: pointer;
+    width: 1rem;
+}
+
+.section__scroll-right{
+    right: -2rem;
+    transform: rotate(90deg);
+}
+
+.section__scroll-left{
+    right: 0rem;
+    transform: rotate(-90deg);
+}
+
+.arrow-left{
+    padding-right: 2rem;
+}
+
+.arrow-right{
+    padding-left: 2rem;
 }
 
 /*************** S K I L L S ****************/
@@ -1218,14 +1270,10 @@ textarea:focus ~ label {
 }
 
 .footer__social-icons a img{
-    width: 2rem;
     cursor: pointer;
-    color: var(--primary-color);
+    width: 2rem;
 }
 
-.footer__social-icons a img:hover{
-    color: var(--secundary-color);
-}
     
     
     } 
@@ -1313,4 +1361,5 @@ textarea:focus ~ label {
     border: 2px solid #f03b2eac;
     border-radius: 5px;
 }
+
 }

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Saavedra</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /
+    >
+    <link rel="icon" type="image/png" href="./src/logo.png">
+
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
@@ -34,25 +37,26 @@
         <p class="section__subtitle">¡Hola! Soy</p>
         <h2 class="section__title">Diana Saavedra</h2>
         <p class="section__career">FULL STACK DEVELOPER</p>
+        <img onclick="scrollDown()" class="section__go-down" src="./src/go-down.svg" alt="">
       </div>
         <img src="./src/img-presentation.svg" alt="" class="section__img-presentation">
-        <img onclick="scrollDown()" class="section__go-down" src="./src/go-down.svg" alt="">
-    </section>
-    <section id="about" class="section section-about">
-      <div class="section__container">
-        <h2 class="section__title section__title-about">Acerca de Mí</h2>
-        <img class="section__img-about" src="./src/img--about-me.svg" alt="">
+      </section>
+      <section id="about" class="section section-about">
+        <div class="section__container">
+          <h2 class="section__title section__title-about">Acerca de Mí</h2>
+          <img class="section__img-about" src="./src/img--about-me.svg" alt="">
           <div class="section__container-info">
-            <div class="container-info__content">
+            <div class="container-info__content arrow-left">
               <p class="section__text">
                 Poseo la notable habilidad de comprender y asimilar continuamente nuevos conceptos, lo que ha cultivado en mí la destreza de adaptarme con responsabilidad y resolución a diversos entornos y circunstancias. Además, demuestro mi destreza al aplicar eficientemente los conocimientos que ya he adquirido.              </p>
+              </div>
+              <div class="container-info__content arrow-right">
+                <p class="section__text">
+                  Mi crecimiento en un entorno emprendedor ha fomentado en mí la capacidad de trabajar en equipo, comunicarme de manera asertiva, gestionar eficientemente el tiempo y desarrollar autonomía. Estas cualidades me impulsan a avanzar en mis conocimientos y proyectos en el ámbito del desarrollo web, asegurando que esté siempre a la vanguardia de la tecnología para satisfacer las necesidades del usuario.
+                </p>
+              </div>
+              <img onclick="scrollToContent()" class="section__scroll section__scroll-left" src="./src/go-down.svg" alt="">
             </div>
-            <div class="container-info__content">
-              <p class="section__text">
-                Mi crecimiento en un entorno emprendedor ha fomentado en mí la capacidad de trabajar en equipo, comunicarme de manera asertiva, gestionar eficientemente el tiempo y desarrollar autonomía. Estas cualidades me impulsan a avanzar en mis conocimientos y proyectos en el ámbito del desarrollo web, asegurando que esté siempre a la vanguardia de la tecnología para satisfacer las necesidades del usuario.
-              </p>
-            </div>
-          </div>
       </div>
     </section>
     <section id="skills" class="section section-skills">
@@ -111,55 +115,55 @@
         <div class="section__container-projects">
           <img src="./src/ecommerce.jpeg" alt="">
           <div class="container__container-buttons">
-            <a href="https://github.com/Terbroy/Ecommerce_API.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a href="https://ecommerce-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+            <a target="_blank" href="https://github.com/Terbroy/Ecommerce_API.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a target="_blank" href="https://ecommerce-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
           </div>
         </div>
         <div class="section__container-projects">
           <img src="./src/users-crud.png" alt="">
           <div class="container__container-buttons">
-            <a href="https://github.com/Terbroy/users-crud.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a href="https://crud-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+            <a target="_blank" href="https://github.com/Terbroy/users-crud.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a target="_blank" href="https://crud-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
           </div>
         </div>
         <div class="section__container-projects">
           <img src="./src/pokemon-api.jpeg" alt="">
           <div class="container__container-buttons">
-            <a href="https://github.com/Terbroy/Pokedex.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a href="https://pokedex-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+            <a target="_blank" href="https://github.com/Terbroy/Pokedex.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a target="_blank" href="https://pokedex-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
           </div>
         </div>
         <div class="section__container-projects">
           <img src="./src/wheather-app.jpeg" alt="">
           <div class="container__container-buttons">
-            <a href="https://github.com/Terbroy/Weather-app.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a href="https://weatherapp-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+            <a target="_blank" href="https://github.com/Terbroy/Weather-app.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+            <a target="_blank" href="https://weatherapp-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
           </div>
         </div>
           <div class="section__container-projects">
             <img src="./src/rick&morty-app.jpeg" alt="">
             <div class="container__container-buttons">
-                <a href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-                <a href="https://rickandmorty-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
+                <a target="_blank" href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
+                <a target="_blank" href="https://rickandmorty-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
             </div>
         </div>
           <div class="section__container-projects">
-            <img src="./src/rick&morty-app.jpeg" alt="">
-            <div class="container__container-buttons">
-                <a href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-                <a href="https://rickandmorty-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-            </div>
+            <a href="#">
+              <img src="./src/portfolio.jpeg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
     <section id="contact" class="section section-contact">
       <h2 class="section__title">Contacto</h2>
       <p class="section__text">
         Si estás interesado, por favor, proporciona tu información de contacto y te responderé lo más pronto posible.      </p>
-      <form class="section__form" id="contact-form" action="enviar.php" method="POST">
+      <form class="section__form" id="form">
         <div class="form__element">
-          <input class="element__input" type="text" id="name" name="name" required>
-          <label for="name">Nombre:</label>
+          <input class="element__input" type="text" name="from_name" id="from_name" required>
+          <label for="from_name" >Nombre:</label>
         </div>
         <div class="form__element">
           <input class="element__input" type="email" id="email" name="email" required>
@@ -173,7 +177,7 @@
           <textarea class="element__input element__input-msg" id="message" name="message" required></textarea>
           <label for="message">Mensaje:</label>
         </div>
-        <button class="form__submit" type="submit">ENVIAR</button>
+        <input value="enviar email" id="button" class="form__submit" type="submit"></input>
       </form>      
     </section>
   </main>
@@ -182,13 +186,13 @@
     <div>
       <img class="footer__name" src="./src/name.svg" alt="">
       <div class="footer__social-icons">
-        <a href="">
+        <a target="_blank" href="https://github.com/Terbroy">
           <img src="./src/icon2.svg" alt="">
         </a>
-        <a href="">
+        <a target="_blank" href="mailto:teresabroyer2003@gmail.com">
           <img src="./src/email.svg" alt="">
         </a>
-        <a href="">
+        <a target="_blank" href="https://www.linkedin.com/in/teresa-broyer">
           <img src="./src/linkedin.svg" alt="">
         </a>
       </div>
@@ -196,5 +200,10 @@
     </div>
   </footer>
   <script src="./main.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('T0oGkH5ZykdQPSysT')
+  </script>
 </body>
 </html>
