@@ -21,7 +21,31 @@ document.getElementById('form')
 
 function scrollDown() {
     window.scrollBy(0, window.innerHeight);
-  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var sections = document.querySelectorAll(".section");
+  
+  var options = {
+    root: null, 
+    rootMargin: "0px",
+    threshold: 0.3 
+  };
+  
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, options);
+  
+  sections.forEach(function(section) {
+    observer.observe(section);
+  });
+});
+
 
  function scrollToContent() {
   const container = document.querySelector('.section__container-info');
