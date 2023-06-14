@@ -534,6 +534,7 @@ textarea:focus ~ label {
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+    position: relative;
     padding-bottom: 4rem;
 }
 
@@ -543,8 +544,10 @@ textarea:focus ~ label {
 }
 
 .footer__name{
-    width: 1.5rem;
-    display: none;
+    width: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
 }
 
 .footer__social-icons a img{
@@ -1268,6 +1271,11 @@ textarea:focus ~ label {
 
 .footer > div p {
     display: none;
+}
+
+.footer > div a img{
+    display: block;
+    position: static;
 }
 
 .footer__social-icons{
