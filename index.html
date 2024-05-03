@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diana Saavedra</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /
-    >
-    <link rel="icon" type="image/png" href="./src/logo.png">
 
-    <link rel="stylesheet" href="./styles/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diana Saavedra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="./src/logo.png">
+
+  <link rel="stylesheet" href="./styles/style.css">
 
 </head>
+
 <body>
-    <header class="header">
-        <nav class="header__nav">
-          <div class="nav-toggle">
-            <input type="checkbox" id="menu-toggle" class="nav-toggle__input">
-            <label for="menu-toggle" class="nav-toggle__icon">
-              <img src="./src/icon-nav.svg" alt="">
-            </label>
-            <div class="nav-menu">
-              <ul class="nav-menu__list">
-                <li class="nav-menu__item"><a href="#presentation">Home</a></li>
-                <li class="nav-menu__item"><a href="#about">Acerca de Mi</a></li>
-                <li class="nav-menu__item"><a href="#skills">Habilidades</a></li>
-                <li class="nav-menu__item"><a href="#projects">Proyectos</a></li>
-                <li class="nav-menu__item"><a href="#contact">Contáctame</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header class="header">
+    <nav class="header__nav">
+      <div class="nav-toggle">
+        <input type="checkbox" id="menu-toggle" class="nav-toggle__input">
+        <label for="menu-toggle" class="nav-toggle__icon">
+          <img src="./src/icon-nav.svg" alt="">
+        </label>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="#presentation">Home</a></li>
+            <li class="nav-menu__item"><a href="#about">Acerca de Mi</a></li>
+            <li class="nav-menu__item"><a href="#skills">Habilidades</a></li>
+            <li class="nav-menu__item"><a href="#projects">Proyectos</a></li>
+            <li class="nav-menu__item"><a href="#contact">Contáctame</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main class="main">
     <section id="presentation" class="section section-presentation">
       <div class="presentation-container-text">
@@ -39,131 +42,335 @@
         <p class="section__career">FULL STACK DEVELOPER</p>
         <img onclick="scrollDown()" class="section__go-down" src="./src/go-down.svg" alt="">
       </div>
-        <img src="./src/img-presentation.svg" alt="" class="section__img-presentation">
-      </section>
-      <section id="about" class="section section-about">
-        <div class="section__container">
-          <h2 class="section__title section__title-about">Acerca de Mí</h2>
-          <img class="section__img-about" src="./src/img--about-me.svg" alt="">
-          <div class="section__container-info">
-            <div class="container-info__content arrow-left">
-              <p class="section__text">
-                Poseo la notable habilidad de comprender y asimilar continuamente nuevos conceptos, lo que ha cultivado en mí la destreza de adaptarme con responsabilidad y resolución a diversos entornos y circunstancias. Además, demuestro mi destreza al aplicar eficientemente los conocimientos que ya he adquirido.              </p>
-              </div>
-              <div class="container-info__content arrow-right">
-                <p class="section__text">
-                  Mi crecimiento en un entorno emprendedor ha fomentado en mí la capacidad de trabajar en equipo, comunicarme de manera asertiva, gestionar eficientemente el tiempo y desarrollar autonomía. Estas cualidades me impulsan a avanzar en mis conocimientos y proyectos en el ámbito del desarrollo web, asegurando que esté siempre a la vanguardia de la tecnología para satisfacer las necesidades del usuario.
-                </p>
-              </div>
-              <img onclick="scrollToContent()" class="section__scroll section__scroll-left" src="./src/go-down.svg" alt="">
+      <img src="./src/img-presentation.svg" alt="" class="section__img-presentation">
+    </section>
+    <section id="about" class="section section-about">
+      <div class="section__container">
+        <h2 class="section__title section__title-about">Acerca de Mí</h2>
+        <img class="section__img-about" src="./src/img--about-me.svg" alt="">
+        <div class="section__container-info">
+          <div class="container-info__content arrow-left">
+            <p class="section__text">
+              Poseo la notable habilidad de comprender y asimilar continuamente nuevos conceptos, lo que ha cultivado en
+              mí la destreza de adaptarme con responsabilidad y resolución a diversos entornos y circunstancias. Además,
+              demuestro mi destreza al aplicar eficientemente los conocimientos que ya he adquirido. </p>
+          </div>
+          <div class="container-info__content arrow-right">
+            <p class="section__text">
+              Mi crecimiento en un entorno emprendedor ha fomentado en mí la capacidad de trabajar en equipo,
+              comunicarme de manera asertiva, gestionar eficientemente el tiempo y desarrollar autonomía. Estas
+              cualidades me impulsan a avanzar en mis conocimientos y proyectos en el ámbito del desarrollo web,
+              asegurando que esté siempre a la vanguardia de la tecnología para satisfacer las necesidades del usuario.
+            </p>
+          </div>
+          <img onclick="scrollToContent()" class="section__scroll section__scroll-left" src="./src/go-down.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="curriculum">
+      <div id="curriculum" class="curriculum__container">
+        <article id="curriculum-info" class="curriculum__info display-none">
+          <img class="curriculum__main-img" src="./src/main-foto.jpg" alt="">
+          <section class="info__personal">
+            <ul>
+              <li>
+                <span>Nombre </span> <span> : </span> <span> Diana Saavedra </span>
+              </li>
+              <li>
+                <span>Nacionalidad </span> <span> : </span> <span> Colombia</span>
+              </li>
+              <li>
+                <span>Residencia </span> <span> : </span> <span> Colombia </span>
+              </li>
+              <li>
+                <span>Email </span> <span> : </span> <span> teresabroyer2003@gmail.com </span>
+              </li>
+              <li>
+                <span>Telefono </span> <span> : </span> <span>+573122413432 </span>
+              </li>
+              <li>
+                <span>Edad </span> <span> : </span> <span>20 </span>
+              </li>
+            </ul>
+            <div class="personal__title">
+              <h3>Personal Info</h3>
+              <button><a href="./src/curriculum.pdf" download="curriculum_diana">DOWNLOAD CV</a>
+                <img src="./src/download.png" alt="" srcset=""></button>
             </div>
+          </section>
+          <section class="info__description">
+            <p>Desarrolladora de software con experiencia en adaptación y creación de soluciones tecnológicas. Amplios
+              conocimientos en bases de
+              datos y habilidades en el desarrollo Backend (Java y Node.js) y Front-End (HTML, CSS, JavaScript y React).
+              Siempre en constante
+              aprendizaje para mejorar mis habilidades técnicas. Cuento con capacidad para trabajar en equipo,
+              adaptación al cambio y orientación
+              al resultado para alcanzar los objetivos propuestos</p>
+          </section>
+          <section class="curriculum__tecnical-info">
+            <article class="tecnical-info__education">
+              <h3 class="education__title">EDUCACION</h3>
+              <div class="education__courses">
+                <img class="courses__img" src="./src/traject.png" alt="">
+                <ul class="courses__list">
+                  <li>
+                    <h4>Alura Backend Java</h4>
+                    <small><i>01/2024 - Actualmente</i></small>
+                    <small>Oracle</small>
+                  </li>
+                  <li>
+                    <h4>Full Stack Java Developer Junior</h4>
+                    <small><i>12/2023 - 04/2024</i></small>
+                    <small>Generation, Bogotá - Colombia</small>
+                  </li>
+                  <li>
+                    <h4>Full Stack React & Node.js</h4>
+                    <small><i>06/2022 - 12/2022</i></small>
+                    <small>Academlo Inc</small>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <hr>
+            <article class="tecnical-info__experience">
+              <h3>EXPERIENCIA LABORAL</h3>
+              <div class="experience__traject">
+                <ul class="traject__list">
+                  <li>
+                    <h4>BIT | Bogotá</h4>
+                    <small>2/2024 - Actualmente</small>
+                  </li>
+                  <li>
+                    <h4>Floristería MVP para Emprendedoras</h4>
+                    <small>10/2023 04/2024</small>
+                  </li>
+                </ul>
+                <img src="./src/traject2.png" alt="">
+                <ul class="traject__list">
+                  <li>
+                    <h4>Mentora Técnica BIT MEAN Stack</h4>
+                    <small>Más de 200 mentorías y workshops donde
+                      compartí mi pasión por el stack MEAN con
+                      estudiantes ávidos de conocimiento. Dominio de
+                      MongoDB, Express, Angular y Node.js,
+                      transmitiendo mi experiencia de forma práctica
+                      y efectiva realizando una Metodología
+                      personalizada adaptada a las necesidades de
+                      cada estudiante</small>
+                  </li>
+                  <li>
+                    <h4>Líder de equipo de desarrollo</h4>
+                    <small>Creación de la floristería en línea "La Boutique de
+                      las Flores. Lideré un equipo de desarrolladores
+                      en la creación de la plataforma MVP. El objetivo
+                      principal fue mejorar la visibilidad de la
+                      floristería, ampliando los canales de venta y
+                      brindando una experiencia de compra cómoda y
+                      eficiente a los clientes</small>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <hr>
+            <article class="container">
+              <article class="tecnical-info__lenguage">
+                <h3>IDIOMAS</h3>
+                <ul>
+                  <li><i>Ingles - B1</i></li>
+                  <li><i>Español - NATIVO</i></li>
+                </ul>
+              </article>
+              <hr>
+              <article class="tecnical-info__skills">
+                <ol>
+                  <li>Bases de datos SQL y noSQL: Conocimientos en SQL, PostgreSQL, Postman, MongoDB y MySQL.
+                  </li>
+                  <li>Desarrollo Backend: Habilidades en Java y Node.js.
+                  </li>
+                  <li>Desarrollo FullStack: Conocimientos en Angular, React y Typescript.
+                  </li>
+                  <li>Metodologías Scrum y DevOps: Experiencia en estas metodologías de desarrollo de software.
+                  </li>
+                  <li>Desarrollo Frontend: Habilidades en HTML, CSS y JavaScript.
+                  </li>
+                  <li>Contenedores y orquestación: Conocimientos en Docker.
+                  </li>
+                  <li>Integración y entrega continua (CI/CD): GitLab CI/CD y GitHub Actions.
+                  </li>
+                  <li>Pruebas de software: Habilidades en pruebas unitarias, de integración y de sistema.
+                  </li>
+                  <li>Seguridad de software: JWT y Bcrypt
+                  </li>
+                  <li>Otras habilidades: Gestión de proyectos,Comunicación efectiva y
+                    Trabajo en equipo.
+                  </li>
+                </ol>
+                <button class="skills__certifications"><a target="_blank"
+                    href="https://drive.google.com/drive/folders/1tsaarEuMAOR8QIfQJSB8PAqu3gi5Ow44?usp=sharing">CERTIFICACIONES</a></button>
+              </article>
+            </article>
+          </section>
+        </article>
+        <div class="curriculum__dropdown">
+          <img id="dropdown-icon" class="dropdown__icon " src="./src/Vector.png" alt="">
+          <div class="dropdown__info">
+            <p>Ver mas acerca de mi</p>
+            <img id="expand" class="info__expand" src="./src/expand.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
     <section id="skills" class="section section-skills">
-      <h2 class="section__title section__title-skills">HABILIDADES</h2>
-      <p class="section__text">
-        Aplico un enfoque de diseño adaptable a la interfaz del usuario, con el objetivo de lograr una visualización óptima en diversos dispositivos. De esta manera, busco garantizar un manejo escalable, funcional y ergonómico para el usuario. Además, me aseguro de seguir las mejores prácticas, fomentando la dinamicidad y accesibilidad web para brindar una experiencia de usuario enriquecedora.      </p>
-      <div class="section__slider section__slider-top">
-        <ul class="section__list">
-          <li class="section__item"><img class="item-icon item-icon1" src="./src/icon1.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon2" src="./src/icon2.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon3" src="./src/icon3.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon4" src="./src/icon4.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon5" src="./src/icon5.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon6" src="./src/icon6.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon7" src="./src/icon7.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon8" src="./src/icon8.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon9" src="./src/icon9.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon1" src="./src/icon1.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon2" src="./src/icon2.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon3" src="./src/icon3.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon4" src="./src/icon4.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon5" src="./src/icon5.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon6" src="./src/icon6.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon7" src="./src/icon7.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon8" src="./src/icon8.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon9" src="./src/icon9.svg" alt=""></li>
-         
-        </ul>
+      <div class="skills__container-title">
+        <h2 class="section__title section__title-skills">#Skills</h2>
+        <hr>
       </div>
-      <div class="section__slider section__slider-bottom">
-        <ul class="section__list section__list-reverse">
-          <li class="section__item"><img class="item-icon item-icon1" src="./src/icon1.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon2" src="./src/icon2.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon3" src="./src/icon3.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon4" src="./src/icon4.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon5" src="./src/icon5.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon6" src="./src/icon6.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon7" src="./src/icon7.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon8" src="./src/icon8.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon9" src="./src/icon9.svg" alt=""></li> 
-          <li class="section__item"><img class="item-icon item-icon1" src="./src/icon1.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon2" src="./src/icon2.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon3" src="./src/icon3.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon4" src="./src/icon4.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon5" src="./src/icon5.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon6" src="./src/icon6.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon7" src="./src/icon7.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon8" src="./src/icon8.svg" alt=""></li>
-          <li class="section__item"><img class="item-icon item-icon9" src="./src/icon9.svg" alt=""></li>
-      </div>
-    </section>
+      <img class="skills__bg" src="./src/skills-bg.png" alt="">
+      <article class="skills__article">
+        <div class="skills__item">
+          <h4 class="item__skill-title">Lenguajes</h4>
+          <hr>
+          <ul class="item__list-skill">
+            <li>Typescript</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4 class="item__skill-title">Herramientas</h4>
+          <hr>
+          <ul class="item__list-skill">
+            <li>Typescript</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4 class="item__skill-title">Bases de Datos</h4>
+          <hr>
+          <ul class="item__list-skill">
+            <li>Typescript</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4 class="item__skill-title">Frameworks</h4>
+          <hr>
+          <ul class="item__list-skill">
+            <li>Typescript</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <h4 class="item__skill-title">Others</h4>
+          <hr>
+          <ul class="item__list-skill">
+            <li>Typescript</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+      </article>
 
+    </section>
     <section id="projects" class="section section-projects">
-      <h2 class="section__title section__title-projects">Proyectos</h2>
-      <div class="section__container-elements">
-        <div class="section__container-projects">
-          <img src="./src/ecommerce.jpeg" alt="">
-          <div class="container__container-buttons">
-            <a target="_blank" href="https://github.com/Terbroy/Ecommerce-react" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a target="_blank" href="https://ecommerce-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-          </div>
-        </div>
-        <div class="section__container-projects">
-          <img src="./src/users-crud.png" alt="">
-          <div class="container__container-buttons">
-            <a target="_blank" href="https://github.com/Terbroy/users-crud.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a target="_blank" href="https://crud-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-          </div>
-        </div>
-        <div class="section__container-projects">
-          <img src="./src/pokemon-api.jpeg" alt="">
-          <div class="container__container-buttons">
-            <a target="_blank" href="https://github.com/Terbroy/Pokedex.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a target="_blank" href="https://pokedex-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-          </div>
-        </div>
-        <div class="section__container-projects">
-          <img src="./src/wheather-app.jpeg" alt="">
-          <div class="container__container-buttons">
-            <a target="_blank" href="https://github.com/Terbroy/Weather-app.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-            <a target="_blank" href="https://weatherapp-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-          </div>
-        </div>
-          <div class="section__container-projects">
-            <img src="./src/rick&morty-app.jpeg" alt="">
-            <div class="container__container-buttons">
-                <a target="_blank" href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon"><i class=" fa-brands fa-github"></i> </a>
-                <a target="_blank" href="https://rickandmorty-terbro.netlify.app/" class=" btn__icon"><i class=" fa-solid fa-globe"></i> </a>
-            </div>
-        </div>
-          <div class="section__container-projects">
-            <a href="#">
-              <img src="./src/portfolio.jpeg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <h2 class="section__title section__title-projects">Github <span>Projects</span></h2>
+      <article class="projects__group">
 
+        <div id="projects-group-1" class="section__container-elements">
+  
+          <div class="section__container-projects">
+            <h4>Floristeria</h4>
+            <hr>
+            <div class="container-projects__image">
+              <div class="image__container">
+                <img src="./src/ecommerce.jpeg" alt="">
+                <a target="_blank" href="https://github.com/Terbroy/Ecommerce-react" class=" btn__icon">
+                  <i class=" fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="section__container-projects">
+            <h4>Floristeria</h4>
+            <hr>
+            <div class="container-projects__image">
+              <div class="image__container">
+                <img src="./src/users-crud.png" alt="">
+                <a target="_blank" href="https://github.com/Terbroy/users-crud.git" class=" btn__icon">
+                  <i class=" fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="section__container-projects">
+            <h4>Floristeria</h4>
+            <hr>
+            <div class="container-projects__image">
+              <div class="image__container">
+                <img src="./src/pokemon-api.jpeg" alt="">
+                <a target="_blank" href="https://github.com/Terbroy/Pokedex.git" class=" btn__icon">
+                  <i class=" fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        
+          <div id="projects-group-2" class="section__container-elements display-none" >
+            
+            <div class="section__container-projects ">
+              <h4>Floristeria</h4>
+              <hr>
+              <div class="container-projects__image">
+                <div class="image__container">
+                  <img src="./src/wheather-app.jpeg" alt="">
+                  <a target="_blank" href="https://github.com/Terbroy/Weather-app.git" class=" btn__icon">
+                    <i class=" fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+          <div class="section__container-projects">
+            <h4>Floristeria</h4>
+            <hr>
+            <div class="container-projects__image">
+              <div class="image__container">
+                <img src="./src/rick&morty-app.jpeg" alt="">
+                <a target="_blank" href="https://github.com/Terbroy/Rick-Morty.git" class=" btn__icon">
+                  <i class=" fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+            <div class="section__container-projects">
+              <h4>Floristeria</h4>
+              <hr>
+              <div class="container-projects__image">
+                <div class="image__container">
+                  <img src="./src/portfolio.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </article>
+      <article class="buttons__projects">
+        <button id="projects-btn-1" class="projects__btn"></button>
+        <button id="projects-btn-2" class="projects__btn"></button>
+      </article>
+    </section>
     <section id="contact" class="section section-contact">
       <h2 class="section__title">Contacto</h2>
       <p class="section__text">
-        Si estás interesado, por favor, proporciona tu información de contacto y te responderé lo más pronto posible.      </p>
+        Si estás interesado, por favor, proporciona tu información de contacto y te responderé lo más pronto posible.
+      </p>
       <form class="section__form" id="form">
         <div class="form__element">
           <input class="element__input" type="text" name="from_name" id="from_name" required>
-          <label for="from_name" >Nombre:</label>
+          <label for="from_name">Nombre:</label>
         </div>
         <div class="form__element">
           <input class="element__input" type="email" id="email" name="email" required>
@@ -177,8 +384,8 @@
           <textarea class="element__input element__input-msg" id="message" name="message" required></textarea>
           <label for="message">Mensaje:</label>
         </div>
-        <input value="enviar email" id="button" class="form__submit" type="submit"></input>
-      </form>      
+        <input value="Enviar Email" id="button" class="form__submit" type="submit"></input>
+      </form>
     </section>
   </main>
 
@@ -202,10 +409,10 @@
     </div>
   </footer>
   <script src="./main.js"></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     emailjs.init('T0oGkH5ZykdQPSysT')
   </script>
 </body>
+
 </html>
