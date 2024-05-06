@@ -9,6 +9,8 @@ btnProject1.addEventListener("click",e =>{
   const groupProject1 = document.getElementById("projects-group-1")
   const groupProject2 = document.getElementById("projects-group-2")
   btnProject1.style.backgroundColor="#f85347 "
+  btnProject1.style.width="3rem "
+  btnProject2.style.width="1rem "
   btnProject2.style.backgroundColor="#fff"
   groupProject1.classList.remove("display-none")
   groupProject2.classList.add("display-none")
@@ -17,11 +19,15 @@ btnProject2.addEventListener("click",e =>{
   const groupProject1 = document.getElementById("projects-group-1")
   const groupProject2 = document.getElementById("projects-group-2")
   btnProject2.style.backgroundColor="#f85347 "
+  btnProject2.style.width="3rem "
   btnProject1.style.backgroundColor="#fff"
+  btnProject1.style.width="1rem "
   groupProject1.classList.add("display-none")
   groupProject2.classList.remove("display-none")
 
 })
+
+
 
 expand.addEventListener("click", e => {
   const iconDropdown = document.getElementById('dropdown-icon');
